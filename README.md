@@ -1,37 +1,31 @@
 # financial-time-series
 
 #### 介绍
-cnn和lstm进行金融时间序列预测
+这个项目主要是使用Tensorflow 2.x，搭建了多种模型对5年期的国债数据进行了预测，分为连续型的预测（回归）和离散型的预测（分类）两部分。
 
-#### 软件架构
-软件架构说明
+#### 目录说明
+checkpoint/
+data/                                                # 数据目录，主要包括原始数据和生成的中间数据
+logs/ 
+img/ 
+cnn.ipynb                                        #  conv1卷积神经网络目录    
+lstm.ipynb                                       #  lstm神经网络目录
+cnn-lstm.ipynb                               # cnn-lstm神经网络目录
+arma.ipynb                                     # arma模型目录
+feature_engineer.ipynb                 # 常用的金融时间序列特征工程挖掘方法目录
+shibor数据获取.ipynb                   # shibor目录
+ for_paper.ipynb                            # 该目录下主要有一个将多张图片合成为一张图片的代码
+金融时间序列特征分析.ipynb     #  该目录主要对金融时间序列进行了分析
 
+#### 参考
 
-#### 安装教程
+* 用滑动窗口搭建神经网络的代码主要参考自北京大学曹健老师慕课Tensorflow笔记
+* 金融时间序列特征分析.ipynb 所有代码几乎全部来自https://www.heywhale.com/mw/project/5f914ae1e200680030f4452e/
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+* https://www.statsmodels.org/v0.12.0/index.html
+* https://tensorflow.google.cn/guide/keras/functional?hl=zh_cn
+* https://otexts.com/fppcn/what-can-be-forecast.html
+* https://machinelearningmastery.com/cnn-long-short-term-memory-networks/
+* http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+* https://karpathy.github.io/2015/05/21/rnn-effectiveness/
+* https://keras.io/zh/examples/imdb_cnn_lstm/
